@@ -1,9 +1,9 @@
 const CTFUtils = require("rg-ctf-utils");
 const { CTFEvent } = CTFUtils;
 
-//3
+//5
 
-module.exports = (bot) => {
+function configureBot (bot) {
 
   bot.allowDigWhilePathing(false);
 
@@ -13,4 +13,8 @@ module.exports = (bot) => {
     bot.chat(`Hey, I'm called ${bot.username}!`);
   });
 
+}
+
+module.exports = {
+  configureBot
 };
