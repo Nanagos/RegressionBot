@@ -11,6 +11,14 @@ const configureBot = (bot) => {
 
   bot.on("spawn", () => {
     bot.chat(`Hey, I'm called ${bot.username}!`);
+    bot.findAndCollectItemsOnGround();
+  });
+
+  bot.on(CTFEvent.ITEM_COLLECTED, (collector, item) => {
+    console.log(`${collector.name} collected an item: ${item.name}!`);
+    if(collector.name === bot.username) {
+      bot.findAndCollectItemsOnGround();
+    }
   });
 
 }
