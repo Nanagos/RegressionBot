@@ -7,7 +7,7 @@ const configureBot = (bot) => {
 
   bot.allowDigWhilePathing(false);
 
-  const ctfUtils = new CTFUtils(bot);
+  //const ctfUtils = new CTFUtils(bot);
 
   bot.on("spawn", () => {
     bot.chat(`Hey, I'm called ${bot.username}!`);
