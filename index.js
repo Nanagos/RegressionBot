@@ -1,9 +1,9 @@
 const CTFUtils = require("rg-ctf-utils");
 const { CTFEvent } = CTFUtils;
 
-//5
+//6
 
-function configureBot (bot) {
+const configureBot = (bot) => {
 
   bot.allowDigWhilePathing(false);
 
