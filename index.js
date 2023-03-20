@@ -2,7 +2,7 @@ const { RGBot } = require("rg-bot");
 const RGCTFUtils = require("rg-ctf-utils");
 const { CTFEvent } = RGCTFUtils;
 const { Vec3 } = require("vec3");
-//ewrewrwefgrdgd
+//ewrewrwefgrdgdfes
 
 
 module.exports = (bot) => {
